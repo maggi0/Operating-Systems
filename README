@@ -1,0 +1,55 @@
+================================================================================
+Autor: Grzegorz Lasek                                        Krakow, 13.04.2021
+================================================================================
+
+=======================================================
+Katalog cw3 zawiera 3 programy wykonujace cwiczenie 3:
+=======================================================
+
+1. program obslugujacy sygnaly z opcja (1) wykonania operacji domyslnej
+(2) ignorowania i (3) przechwycenia i wlasnej obslugi sygnalu:
+    -> zada.c
+
+2. program uruchamiajacy w procesie potomnym 1. program do obslugi sygnalu
+i wysylajacy do niego sygnalu w procesie macierzystym za pomoca funkcji
+kill. Sklada sie z dwoch modulow:
+    -> zadb.c
+    -> zada.c
+
+3. program uruchamiajacy w procesie potomnym grupe procesow wykonujacych
+program do obslugi sygnalow i wysylajacy sygnaly do calej grupy procesow.
+Sklada sie z trzech modulow:
+    -> zadc1.c
+    -> zadc2.c
+    -> zada.c
+
+========================
+Uruchamianie programu:
+========================
+
+1. Aby uruchomic 1-szy program nalezy wykonac dane polecenie:
+    -> make run1 OPT=[opcja obslugi] SIG=[numer sygnalu]
+
+2. Aby uruchomic 2-gi program nalezy wykonac dane polecenie:
+    -> make run2 OPT=[opcja obslugi] SIG=[numer sygnalu]
+
+3. Aby uruchomic 3-ci program nalezy wykonac dane polecenie:
+    -> make run3 OPT=[opcja obslugi] SIG=[numer sygnalu]
+
+opcja obslugi:
+1 - wykonanie operacji domyslnej
+2 - ignorowanie
+3 - przechwycenie i wlasna obsluga
+
+numer sygnalu:
+dowolny numer sygnalu, na ktorym chcemy dzialac
+
+=================
+Dodatkowe opcje:
+=================
+
+1. Aby usunac zbedne pliki:
+    -> make clean
+
+2. Aby zarchiwizowac i skompresowac:
+    -> make tar
