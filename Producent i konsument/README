@@ -1,0 +1,40 @@
+================================================================================
+Autor: Grzegorz Lasek                                        Krakow, 05.05.2021
+================================================================================
+
+=======================================================
+Katalog cw5 zawiera 2 programy wykonujace 2 podpunkty
+z cwiczenia 5:
+=======================================================
+
+1. program implementujacy problem producenta-konsumenta 
+potokami nazwanymi, zada.c uruchamia programy "producenta"
+i "konsumenta" funkcja exec:
+    -> zada.c
+    -> konsument.c
+    -> producent.c
+
+2. program uruchamiajacy programy "producenta" i 
+"konsumenta" z poziomu powloki
+    -> konsument.c
+    -> producent.c
+
+========================
+Uruchamianie programu:
+========================
+
+Aby uruchomic 1. program nalezy wykonac dane polecenie:
+    -> make run1
+
+Aby uruchomic 2. program nalezy wykonac dane polecenie:
+    -> make run2
+
+=================
+Dodatkowe opcje:
+=================
+
+1. Aby usunac zbedne pliki:
+    -> make clean
+
+2. Aby zarchiwizowac i skompresowac:
+    -> make tar
