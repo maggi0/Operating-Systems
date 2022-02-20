@@ -1,0 +1,31 @@
+================================================================================
+Autor: Grzegorz Lasek                                        Krakow, 18.05.2021
+================================================================================
+
+=======================================================
+Katalog cw6 zawiera 1 program wykonujacy 2 cwiczenie 6:
+=======================================================
+
+1. program implementujacy wzajemne wykluczanie dla procesow
+przy pomocy semaforow nazwanych
+    -> powielacz.c
+    -> wykl.c
+    -> bib.c
+    -> bib.h
+
+========================
+Uruchamianie programu:
+========================
+
+Aby uruchomic 1. program nalezy wykonac dane polecenie:
+    -> make run PROC=[liczba procesow] SEK=[ilosc sekcji krytycznych]
+
+=================
+Dodatkowe opcje:
+=================
+
+1. Aby usunac zbedne pliki:
+    -> make clean
+
+2. Aby zarchiwizowac i skompresowac:
+    -> make tar
